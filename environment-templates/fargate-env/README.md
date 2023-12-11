@@ -6,6 +6,8 @@ It also deploys an ECS cluster to group your fargate tasks and services. An ECS 
 
 The environment supports asynchronous service-to-service communication using a publish/subscribe model through a shared Amazon SNS topic. In contrast to synchronous communication (i.e. HTTP API), with asynchronous communication, we can avoid blocking the sender to wait for a response as well as decoupling producer from consumer. Multiple services can broadcast events to the SNS topic. All components that subscribe to the topic will receive the message, and can each do something different with the message in parallel. 
 
+Updating version.
+
 ## Architecture
 
 ![fargate-env](../../images/fargate-env.png)
